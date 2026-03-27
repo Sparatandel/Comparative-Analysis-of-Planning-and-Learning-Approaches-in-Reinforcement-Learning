@@ -16,6 +16,10 @@ import time
 import numpy as np
 from PIL import Image, ImageTk
 import io
+import os
+
+port = int(os.environ.get("PORT", 10000))
+app.run(host="0.0.0.0", port=port)
 
 # ── Color Palette ─────────────────────────────────────────────────
 BG_DEEP   = '#08080e'
